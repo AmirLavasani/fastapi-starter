@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# change ai-service-template to your service name
 conda create --name ai-service-template python=3.11
 
 make install-deps
