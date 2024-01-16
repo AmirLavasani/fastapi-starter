@@ -5,12 +5,13 @@ Welcome to the AI Service Template repository! This template is designed for bui
 ## Main Folders
 
 - **app:** Main application code resides here.
-  - **app/assets:** Houses assets and AI models.
+  - **app/assets:** Houses assets, files, and images.
   - **app/controllers:** Contains the controllers and logic code for the server.
   - **app/errors:** Holds error response definitions.
   - **app/routers:** Routers for defining API paths.
   - **app/schemas:** Pydantic schemas for the API.
   - **app/utils:** Any additional utility functions can be found here.
+  - **app/models:** Store the AI models here.
   - **app/main.py:** The main FastAPI file.
 
 - **docs:** Auto-generated code documentation. Do not modify this directory; it's generated using `make docs`.
@@ -54,3 +55,26 @@ make lint
 
 This command will execute the linting checks based on the configurations specified in mypy.ini and .flake8 files. These configurations define rules for mypy and flake8 to ensure code consistency, style adherence, and type checking across the project.
 
+## Make New AI Service Project
+
+1. clone this repo
+```bash
+git clone http://172.31.112.27/ai-services/ai-service-template.git
+```
+
+2. change the remote to your-project
+```bash
+git remote rename origin http://172.31.112.27/ai-services/your-service-project.git
+```
+
+3. change `ai-service-template` in the following locations to your project service name.
+- docker-compose.yml
+- Makefile
+- setup.sh
+
+4. create conda env and running the `setup.sh` file, and installing the dependencies.
+```bash
+./setup.sh
+```
+
+5. start by creating a router file in `routers` and add your router in `routers/__init__.py`. Use `version_router` example.
