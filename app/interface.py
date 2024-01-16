@@ -7,7 +7,8 @@ import gradio as gr
 service_description = '''
 # AI Service Template
 
-Welcome to the AI Service Template repository! This template is designed for building AI services using FastAPI as the REST API server, with Docker and docker-compose for containerization.
+Welcome to the AI Service Template repository! This template is designed for building AI services
+using FastAPI as the REST API server, with Docker and docker-compose for containerization.
 
 ## Main Folders
 
@@ -29,6 +30,7 @@ Welcome to the AI Service Template repository! This template is designed for bui
 
 def greet(name, intensity):
     return "Hello " * intensity + name + "!"
+
 
 gr_interface = gr.Interface(
     fn=greet,
