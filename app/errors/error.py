@@ -3,23 +3,34 @@ from pydantic import BaseModel
 from fastapi import HTTPException
 
 
-class GeneralNotFoundErrorResponse(BaseModel):
+class NotFoundErrorResponse(BaseModel):
     type: str = "service.not_found_error"
     msg: str = "The requested resource not found"
     loc: List[str] = ["general", "not_found_error"]
 
 
-HTTPGeneralNotFoundResponse = HTTPException(
-    status_code=404, detail=GeneralNotFoundErrorResponse().model_dump()
+HTTPNotFoundErrorResponse = HTTPException(
+    status_code=404, detail=NotFoundErrorResponse().model_dump()
 )
 
 
-class GeneralInternalServerErrorResponse(BaseModel):
+class BadRequestErrorResponse(BaseModel):
+    type: str = "service.bad_request"
+    msg: str = "The server cannot process the request"
+    loc: List[str] = ["general", "bad_request"]
+
+
+HTTPBadRequestErrorResponse = HTTPException(
+    status_code=400, detail=BadRequestErrorResponse().model_dump()
+)
+
+
+class InternalServerErrorResponse(BaseModel):
     type: str = "service.internal_server_error"
     msg: str = "The server encountered an unexpected condition"
     loc: List[str] = ["general", "internal_server_error"]
 
 
-HTTPGeneralInternalServerErrorResponse = HTTPException(
-    status_code=500, detail=GeneralInternalServerErrorResponse().model_dump()
+HTTPInternalServerErrorResponse = HTTPException(
+    status_code=500, detail=InternalServerErrorResponse().model_dump()
 )
