@@ -9,8 +9,10 @@ from fastapi import FastAPI
 from app.routers import register_routers
 from contextlib import asynccontextmanager
 from loguru import logger
+import gradio as gr
 
 from app.version import VERSION
+from app.interface import gr_interface
 
 
 @asynccontextmanager
@@ -21,6 +23,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(lifespan=lifespan, title="FastAPI AI Service Template", version=VERSION)
+app = gr.mount_gradio_app(app, gr_interface, path="/ui")
 
 register_routers(app)
 
