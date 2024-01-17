@@ -64,13 +64,17 @@ git clone http://172.31.112.27/ai-services/ai-service-template.git
 
 2. change the remote to your-project
 ```bash
-git remote rename origin http://172.31.112.27/ai-services/your-service-project.git
+git remote rename origin template
+git remote add origin http://172.31.112.27/ai-services/your-service-project.git
 ```
 
 3. change `ai-service-template` in the following locations to your project service name.
 - docker-compose.yml
 - Makefile
 - setup.sh
+- README.md
+- interface.py
+- main.py (docstring, fastapi, and root endpoint)
 
 4. create conda env and running the `setup.sh` file, and installing the dependencies.
 ```bash
@@ -78,3 +82,26 @@ git remote rename origin http://172.31.112.27/ai-services/your-service-project.g
 ```
 
 5. start by creating a router file in `routers` and add your router in `routers/__init__.py`. Use `version_router` example.
+
+6. we use trunk-based development. You can create feature branches and merge those frequent updates to `main` or directly push to main.
+
+7. use `main` as default branch name.
+
+8. use `make lint` before every commit and resolve `mypy` and `flake8` errors.
+
+9. build docs after developing the main functionalities and classes.
+
+```bash
+make docs
+
+pdoc -f --html --output-dir docs --config show_source_code=False app/
+```
+
+10. add gradio interface after developing the service api.
+
+11. update dockerfile and build docker image.
+```bash
+make build-docker
+```
+
+12. build pydantic schemas for input and output of your api's.
