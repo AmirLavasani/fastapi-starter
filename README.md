@@ -181,5 +181,6 @@ semantic-release version --minor
 # show the next version updating major
 semantic-release version --major --print
 semantic-release version --major
+
 ```
 
