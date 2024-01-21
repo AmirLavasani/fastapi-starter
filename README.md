@@ -163,3 +163,23 @@ $ git commit -m "feat(mod_plotting): move code from plotting module \
 $ 
 $ BREAKING CHANGE: plotting module wont exist after this release."
 ```
+
+### commands
+
+```bash
+# to show the next version only
+semantic-release -vv --noop version --print
+
+# show the next version updating patch
+semantic-release version --patch --print
+semantic-release version --patch
+
+# show the next version updating minor
+semantic-release version --minor --print
+semantic-release version --minor
+
+# show the next version updating major
+semantic-release version --major --print
+semantic-release version --major
+```
+
