@@ -1,7 +1,7 @@
 from fastapi import APIRouter, status
 
 from app.schemas.version import Version
-from app.version import VERSION
+from app.version import __version__
 
 
 router = APIRouter()
@@ -15,4 +15,4 @@ async def get_app_version():
     Returns:
         Version: The pydantic model for app version.
     """
-    return Version(version=VERSION)
+    return Version(version=__version__)
