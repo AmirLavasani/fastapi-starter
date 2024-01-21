@@ -8,8 +8,8 @@ run:
 	uvicorn app.main:app --reload
 
 lint:
-	mypy app
-	flake8 app
+	mypy src/app
+	flake8 src/app
 
 docs:
 	pdoc -f --html --output-dir docs --config show_source_code=False app/
