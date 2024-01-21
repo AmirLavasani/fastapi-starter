@@ -17,7 +17,8 @@ name = "ai-service-template"  # Required
 #
 # For a discussion on single-sourcing the version, see
 # https://packaging.python.org/guides/single-sourcing-package-version/
-version = "0.2.0"  # Required
+# version = "0.2.0"  # Required
+dynamic = ["version"]
 
 # This is a one-line description or tagline of what your project does. This
 # corresponds to the "Summary" metadata field:
@@ -105,6 +106,9 @@ classifiers = [  # Optional
 dependencies = [ # Optional
 ]
 
+[tool.setuptools.dynamic]
+version = {attr = "app.version.__version__"}
+
 # List additional groups of dependencies here (e.g. development
 # dependencies). Users will be able to install these using the "extras"
 # syntax, for example:
@@ -150,5 +154,5 @@ package-dir = {"" = "src"}
 [build-system]
 # These are the assumed default build requirements from pip:
 # https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
-requires = ["setuptools>=43.0.0", "wheel"]
+requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
