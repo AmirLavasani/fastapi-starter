@@ -2,6 +2,13 @@
 
 
 
+## v0.1.1 (2024-01-21)
+
+### Fix
+
+* fix(versioning): trying fix config for unauthorized gitlab connection ([`98c4f83`](https://gitlab.com/ai-services/ai-service-template/-/commit/98c4f83be2438a1941b9254cc597c969076cba3d))
+
+
 ## v0.1.0 (2024-01-21)
 
 ### Feature
