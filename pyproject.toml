@@ -203,7 +203,7 @@ patch_tags = ["fix", "perf", "chore", "docs", "test"]
 [tool.semantic_release.remote]
 name = "origin"
 type = "gitlab"
-ignore_token_for_push = true
+ignore_token_for_push = false
 
 [tool.semantic_release.remote.token]
 env = "GITLAB_TOKEN"
