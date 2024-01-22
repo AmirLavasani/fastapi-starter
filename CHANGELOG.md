@@ -2,6 +2,15 @@
 
 
 
+## v0.1.2 (2024-01-22)
+
+### Test
+
+* test: commenting out gitlab token
+
+commenting out gitlab token to resolve unauthorized error ([`1ab4d59`](https://gitlab.com/ai-services/ai-service-template/-/commit/1ab4d591d1933dd78446ec2913b306b6866ed904))
+
+
 ## v0.1.1 (2024-01-21)
 
 ### Fix
