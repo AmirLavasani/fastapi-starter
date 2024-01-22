@@ -2,6 +2,15 @@
 
 
 
+## v0.1.4 (2024-01-22)
+
+### Fix
+
+* fix: update readme commands
+
+update commands to include both  building tags and only-push commands ([`4ba5917`](https://gitlab.com/ai-services/ai-service-template/-/commit/4ba591794192cbe1234add1b8060e606093e7584))
+
+
 ## v0.1.3 (2024-01-22)
 
 ### Build
