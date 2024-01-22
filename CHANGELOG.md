@@ -2,6 +2,19 @@
 
 
 
+## v0.1.3 (2024-01-22)
+
+### Build
+
+* build: add PSR as dev dependency ([`286d513`](https://gitlab.com/ai-services/ai-service-template/-/commit/286d5138c97abb918efb2364819f5cc2a3e7ef8a))
+
+### Fix
+
+* fix: change upload_to_vcs_release to false
+
+changing the config so that the ([`68ad4d2`](https://gitlab.com/ai-services/ai-service-template/-/commit/68ad4d2421a16b4315540b373d35703b41cce55e))
+
+
 ## v0.1.2 (2024-01-22)
 
 ### Test
