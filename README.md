@@ -177,9 +177,6 @@ The detailed commands for using the semantic-release.
 ```bash
 
 # default use this command: to update the version, commit and push the version change
-semantic-release version --no-vcs-release
-
-# for not creating a tag in remote git server use the following command
 semantic-release version --no-tag --no-vcs-release
 
 # to show the next version only
