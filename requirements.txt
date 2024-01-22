@@ -2,3 +2,4 @@ fastapi==0.104.1
 pydantic==2.5.1
 uvicorn==0.24.0.post1
 loguru==0.7.2
+gradio==4.14.0
