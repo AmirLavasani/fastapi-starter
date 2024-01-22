@@ -2,6 +2,15 @@
 
 
 
+## v0.2.0 (2024-01-22)
+
+### Feature
+
+* feat: add versioning command in make
+
+add versioning command to makefile ([`d9717c5`](https://gitlab.com/ai-services/ai-service-template/-/commit/d9717c55f35430c7fc369a9f237b845f82034f2b))
+
+
 ## v0.1.2 (2024-01-22)
 
 ### Documentation
