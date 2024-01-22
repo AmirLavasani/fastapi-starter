@@ -6,3 +6,4 @@ pygount==1.6.1
 httpx==0.25.1
 pytest==7.4.3
 python-semantic-release==8.7.0
+build==1.0.3
