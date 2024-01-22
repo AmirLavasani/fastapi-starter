@@ -2,6 +2,15 @@
 
 
 
+## v0.3.1 (2024-01-22)
+
+### Test
+
+* test: add building to versioning
+
+testing the build_command of the semantic-release ([`f93de37`](https://gitlab.com/ai-services/ai-service-template/-/commit/f93de371c779b7726b5a3079dcf25ec3ec0a2237))
+
+
 ## v0.3.0 (2024-01-22)
 
 ### Documentation
