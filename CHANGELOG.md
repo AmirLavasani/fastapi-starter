@@ -2,6 +2,15 @@
 
 
 
+## v0.1.2 (2024-01-22)
+
+### Documentation
+
+* docs: add docstring to version file
+
+adding docstring to version file explaining the methodology of our versioning ([`edb4bca`](https://gitlab.com/ai-services/ai-service-template/-/commit/edb4bcaadfc3b321cbfd4e122a878b3f1d42477a))
+
+
 ## v0.1.1 (2024-01-22)
 
 
