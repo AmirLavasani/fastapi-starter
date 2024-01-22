@@ -2,6 +2,19 @@
 
 
 
+## v0.3.4 (2024-01-22)
+
+### Fix
+
+* fix: add gradio to requirements
+
+add the missing gradio to requirements ([`8699e67`](https://gitlab.com/ai-services/ai-service-template/-/commit/8699e67e6aa2763332cfbed3b31c8607a6f932b0))
+
+* fix: rename dependency installation command
+
+add pip install and rename the old dependency installation ([`2bfa858`](https://gitlab.com/ai-services/ai-service-template/-/commit/2bfa8586eb376963ca0ec530e7ee5567ff826fb9))
+
+
 ## v0.3.3 (2024-01-22)
 
 ### Fix
