@@ -167,23 +167,31 @@ $ BREAKING CHANGE: plotting module wont exist after this release."
 ### commands
 
 ```bash
-# to update the version
+# default use this command: to update the version, commit and push the version change
 semantic-release version --no-tag --no-vcs-release
+
+# to create a tag, commit and push and upload the tag use this command:
+semantic-release version
 
 # to show the next version only
 semantic-release -vv --noop version --print
 
 # show the next version updating patch
 semantic-release version --patch --print
-semantic-release version --patch
+
+# to forcefully update the patch number
+semantic-release version --patch --no-tag --no-vcs-release
 
 # show the next version updating minor
 semantic-release version --minor --print
-semantic-release version --minor
+
+# to forcefully update the minor number
+semantic-release version --minor --no-tag --no-vcs-release
 
 # show the next version updating major
 semantic-release version --major --print
-semantic-release version --major
 
+# to forcefully update the major number
+semantic-release version --major --no-tag --no-vcs-release
 ```
 
