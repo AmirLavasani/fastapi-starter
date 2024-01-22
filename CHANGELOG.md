@@ -2,9 +2,44 @@
 
 
 
-## v0.3.4 (2024-01-22)
+## v0.3.5 (2024-01-22)
 
 ### Fix
+
+* fix: make --no-tag the defualt command ([`d3ac7b7`](https://gitlab.com/ai-services/ai-service-template/-/commit/d3ac7b78e60520e23810221ce8285e88bb8ef5c4))
+
+
+## v0.3.4 (2024-01-22)
+
+### Build
+
+* build: add PSR as dev dependency ([`286d513`](https://gitlab.com/ai-services/ai-service-template/-/commit/286d5138c97abb918efb2364819f5cc2a3e7ef8a))
+
+### Documentation
+
+* docs: add new docuementation ([`bb2a39d`](https://gitlab.com/ai-services/ai-service-template/-/commit/bb2a39da568a8b903eb86b5decfd96d29b79dc3e))
+
+* docs: add docstring to version file
+
+adding docstring to version file explaining the methodology of our versioning ([`edb4bca`](https://gitlab.com/ai-services/ai-service-template/-/commit/edb4bcaadfc3b321cbfd4e122a878b3f1d42477a))
+
+### Feature
+
+* feat: add package building
+
+adding package building commands to makefile to build the .wheel and sdist of the project ([`7656ce1`](https://gitlab.com/ai-services/ai-service-template/-/commit/7656ce10d20111a5b8a0c5556f8fb83fc2ff3c14))
+
+* feat: add versioning command in make
+
+add versioning command to makefile ([`d9717c5`](https://gitlab.com/ai-services/ai-service-template/-/commit/d9717c55f35430c7fc369a9f237b845f82034f2b))
+
+* feat(versioning): testing the angular commit style again
+
+checking the commit style ([`3c3aa8d`](https://gitlab.com/ai-services/ai-service-template/-/commit/3c3aa8d1adc19403982b31f642bd0a75d4049bad))
+
+### Fix
+
+* fix: update the make version command to not add tags ([`6470063`](https://gitlab.com/ai-services/ai-service-template/-/commit/6470063ca6cfdb138eb73f449c65d1d1a60463b4))
 
 * fix: add gradio to requirements
 
@@ -14,89 +49,13 @@ add the missing gradio to requirements ([`8699e67`](https://gitlab.com/ai-servic
 
 add pip install and rename the old dependency installation ([`2bfa858`](https://gitlab.com/ai-services/ai-service-template/-/commit/2bfa8586eb376963ca0ec530e7ee5567ff826fb9))
 
-
-## v0.3.3 (2024-01-22)
-
-### Fix
-
 * fix: add make all to pyproject
 
 add make all command as build_command to pyproject, so that versioning will build the project first. ([`6434101`](https://gitlab.com/ai-services/ai-service-template/-/commit/64341014bb067354a476ff5166ef3f64da7fbde0))
 
-
-## v0.3.2 (2024-01-22)
-
-### Style
-
-* style: update formatting using black ([`cd242e8`](https://gitlab.com/ai-services/ai-service-template/-/commit/cd242e86ee1fa111385b144a8798744c2309ef1c))
-
-
-## v0.3.1 (2024-01-22)
-
-### Test
-
-* test: add building to versioning
-
-testing the build_command of the semantic-release ([`f93de37`](https://gitlab.com/ai-services/ai-service-template/-/commit/f93de371c779b7726b5a3079dcf25ec3ec0a2237))
-
-
-## v0.3.0 (2024-01-22)
-
-### Documentation
-
-* docs: add new docuementation ([`bb2a39d`](https://gitlab.com/ai-services/ai-service-template/-/commit/bb2a39da568a8b903eb86b5decfd96d29b79dc3e))
-
-### Feature
-
-* feat: add package building
-
-adding package building commands to makefile to build the .wheel and sdist of the project ([`7656ce1`](https://gitlab.com/ai-services/ai-service-template/-/commit/7656ce10d20111a5b8a0c5556f8fb83fc2ff3c14))
-
-### Fix
-
 * fix: update docs command
 
 update docs command, it seems `docs` is a make default keyword ([`5305724`](https://gitlab.com/ai-services/ai-service-template/-/commit/5305724498be0a66c66e61761cab2b5f0811b15c))
-
-### Unknown
-
-* Add nex-version command ([`c0e18e6`](https://gitlab.com/ai-services/ai-service-template/-/commit/c0e18e66e0a37b72ee1eb3aa645ce0c4f6e0cc84))
-
-
-## v0.2.0 (2024-01-22)
-
-### Feature
-
-* feat: add versioning command in make
-
-add versioning command to makefile ([`d9717c5`](https://gitlab.com/ai-services/ai-service-template/-/commit/d9717c55f35430c7fc369a9f237b845f82034f2b))
-
-
-## v0.1.2 (2024-01-22)
-
-### Documentation
-
-* docs: add docstring to version file
-
-adding docstring to version file explaining the methodology of our versioning ([`edb4bca`](https://gitlab.com/ai-services/ai-service-template/-/commit/edb4bcaadfc3b321cbfd4e122a878b3f1d42477a))
-
-
-## v0.1.1 (2024-01-22)
-
-
-## v0.1.0 (2024-01-22)
-
-### Build
-
-* build: add PSR as dev dependency ([`286d513`](https://gitlab.com/ai-services/ai-service-template/-/commit/286d5138c97abb918efb2364819f5cc2a3e7ef8a))
-
-### Feature
-
-* feat(versioning): testing the angular commit style again
-
-checking the commit style ([`3c3aa8d`](https://gitlab.com/ai-services/ai-service-template/-/commit/3c3aa8d1adc19403982b31f642bd0a75d4049bad))
-
-### Fix
 
 * fix: change the release command
 
@@ -112,13 +71,23 @@ changing the config so that the ([`68ad4d2`](https://gitlab.com/ai-services/ai-s
 
 * fix(versioning): trying fix config for unauthorized gitlab connection ([`98c4f83`](https://gitlab.com/ai-services/ai-service-template/-/commit/98c4f83be2438a1941b9254cc597c969076cba3d))
 
+### Style
+
+* style: update formatting using black ([`cd242e8`](https://gitlab.com/ai-services/ai-service-template/-/commit/cd242e86ee1fa111385b144a8798744c2309ef1c))
+
 ### Test
+
+* test: add building to versioning
+
+testing the build_command of the semantic-release ([`f93de37`](https://gitlab.com/ai-services/ai-service-template/-/commit/f93de371c779b7726b5a3079dcf25ec3ec0a2237))
 
 * test: commenting out gitlab token
 
 commenting out gitlab token to resolve unauthorized error ([`1ab4d59`](https://gitlab.com/ai-services/ai-service-template/-/commit/1ab4d591d1933dd78446ec2913b306b6866ed904))
 
 ### Unknown
+
+* Add nex-version command ([`c0e18e6`](https://gitlab.com/ai-services/ai-service-template/-/commit/c0e18e66e0a37b72ee1eb3aa645ce0c4f6e0cc84))
 
 * feat (versioning): fixing the commit message
 
