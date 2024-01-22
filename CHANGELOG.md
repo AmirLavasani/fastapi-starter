@@ -2,6 +2,15 @@
 
 
 
+## v0.3.3 (2024-01-22)
+
+### Fix
+
+* fix: add make all to pyproject
+
+add make all command as build_command to pyproject, so that versioning will build the project first. ([`6434101`](https://gitlab.com/ai-services/ai-service-template/-/commit/64341014bb067354a476ff5166ef3f64da7fbde0))
+
+
 ## v0.3.2 (2024-01-22)
 
 ### Style
