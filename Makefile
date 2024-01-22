@@ -11,8 +11,8 @@ lint:
 	mypy src/app
 	flake8 src/app
 
-docs:
-	pdoc -f --html --output-dir docs --config show_source_code=False app/
+docz:
+	rm -rf docs && pdoc -f --html --output-dir docs --config show_source_code=False src/app/
 
 summary:
 	pygount --suffix=py  --format=summary .
