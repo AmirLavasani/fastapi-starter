@@ -2,6 +2,13 @@
 
 
 
+## v0.3.2 (2024-01-22)
+
+### Style
+
+* style: update formatting using black ([`cd242e8`](https://gitlab.com/ai-services/ai-service-template/-/commit/cd242e86ee1fa111385b144a8798744c2309ef1c))
+
+
 ## v0.3.1 (2024-01-22)
 
 ### Test
