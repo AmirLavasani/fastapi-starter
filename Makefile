@@ -27,3 +27,6 @@ docker-run:
 
 version:
 	semantic-release version --no-vcs-release
+
+next-version:
+	semantic-release --noop version --print
