@@ -1,9 +1,9 @@
 # Install project dependencies from requirements.txt
-install:
+install-deps:
 	pip install -r requirements.txt
 
 # Install development dependencies from requirements-dev.txt
-install-dev:
+install-deps-dev:
 	pip install -r requirements-dev.txt
 
 # Run the FastAPI app using uvicorn with auto-reload
@@ -59,4 +59,7 @@ build-wheel:
 clean:
 	rm -rf dist/ build/ docs/
 
-all: clean lint docz summary package-build
+install:
+	pip install .
+
+all: clean lint docz summary package-build install
