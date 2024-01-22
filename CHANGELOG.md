@@ -2,6 +2,29 @@
 
 
 
+## v0.3.0 (2024-01-22)
+
+### Documentation
+
+* docs: add new docuementation ([`bb2a39d`](https://gitlab.com/ai-services/ai-service-template/-/commit/bb2a39da568a8b903eb86b5decfd96d29b79dc3e))
+
+### Feature
+
+* feat: add package building
+
+adding package building commands to makefile to build the .wheel and sdist of the project ([`7656ce1`](https://gitlab.com/ai-services/ai-service-template/-/commit/7656ce10d20111a5b8a0c5556f8fb83fc2ff3c14))
+
+### Fix
+
+* fix: update docs command
+
+update docs command, it seems `docs` is a make default keyword ([`5305724`](https://gitlab.com/ai-services/ai-service-template/-/commit/5305724498be0a66c66e61761cab2b5f0811b15c))
+
+### Unknown
+
+* Add nex-version command ([`c0e18e6`](https://gitlab.com/ai-services/ai-service-template/-/commit/c0e18e66e0a37b72ee1eb3aa645ce0c4f6e0cc84))
+
+
 ## v0.2.0 (2024-01-22)
 
 ### Feature
