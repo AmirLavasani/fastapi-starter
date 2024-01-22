@@ -24,3 +24,6 @@ docker-build:
 # change ai-service-template to your project name
 docker-run:
 	docker run --rm -ti -p 8000:8000 ai-service-template:latest
+
+version:
+	semantic-release version --no-vcs-release
