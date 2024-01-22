@@ -167,6 +167,9 @@ $ BREAKING CHANGE: plotting module wont exist after this release."
 ### commands
 
 ```bash
+# to update the version
+semantic-release version --no-tag --no-vcs-release
+
 # to show the next version only
 semantic-release -vv --noop version --print
 

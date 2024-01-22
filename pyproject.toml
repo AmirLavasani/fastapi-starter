@@ -198,17 +198,17 @@ default = "semantic-release <semantic-release>"
 [tool.semantic_release.commit_parser_options]
 allowed_tags = ["build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test"]
 minor_tags = ["feat", "refactor"]
-patch_tags = ["fix", "perf", "chore", "docs", "test"]
+patch_tags = ["fix", "perf", "chore", "docs", "test", "build"]
 
 [tool.semantic_release.remote]
 name = "origin"
 type = "gitlab"
 ignore_token_for_push = true
 
-# [tool.semantic_release.remote.token]
-# env = "GITLAB_TOKEN"
+[tool.semantic_release.remote.token]
+env = "GH_TOKEN"
 
 [tool.semantic_release.publish]
 dist_glob_patterns = ["dist/*"]
-upload_to_vcs_release = true
+upload_to_vcs_release = false
 
