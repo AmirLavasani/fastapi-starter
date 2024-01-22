@@ -171,7 +171,7 @@ $ BREAKING CHANGE: plotting module wont exist after this release."
 semantic-release version --no-tag --no-vcs-release
 
 # to create a tag, commit and push and upload the tag use this command:
-semantic-release version
+semantic-release version --no-vcs-release
 
 # to show the next version only
 semantic-release -vv --noop version --print
