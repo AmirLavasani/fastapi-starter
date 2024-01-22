@@ -2,51 +2,39 @@
 
 
 
-## v0.1.4 (2024-01-22)
-
-### Fix
-
-* fix: update readme commands
-
-update commands to include both  building tags and only-push commands ([`4ba5917`](https://gitlab.com/ai-services/ai-service-template/-/commit/4ba591794192cbe1234add1b8060e606093e7584))
-
-
-## v0.1.3 (2024-01-22)
+## v0.1.0 (2024-01-22)
 
 ### Build
 
 * build: add PSR as dev dependency ([`286d513`](https://gitlab.com/ai-services/ai-service-template/-/commit/286d5138c97abb918efb2364819f5cc2a3e7ef8a))
-
-### Fix
-
-* fix: change upload_to_vcs_release to false
-
-changing the config so that the ([`68ad4d2`](https://gitlab.com/ai-services/ai-service-template/-/commit/68ad4d2421a16b4315540b373d35703b41cce55e))
-
-
-## v0.1.2 (2024-01-22)
-
-### Test
-
-* test: commenting out gitlab token
-
-commenting out gitlab token to resolve unauthorized error ([`1ab4d59`](https://gitlab.com/ai-services/ai-service-template/-/commit/1ab4d591d1933dd78446ec2913b306b6866ed904))
-
-
-## v0.1.1 (2024-01-21)
-
-### Fix
-
-* fix(versioning): trying fix config for unauthorized gitlab connection ([`98c4f83`](https://gitlab.com/ai-services/ai-service-template/-/commit/98c4f83be2438a1941b9254cc597c969076cba3d))
-
-
-## v0.1.0 (2024-01-21)
 
 ### Feature
 
 * feat(versioning): testing the angular commit style again
 
 checking the commit style ([`3c3aa8d`](https://gitlab.com/ai-services/ai-service-template/-/commit/3c3aa8d1adc19403982b31f642bd0a75d4049bad))
+
+### Fix
+
+* fix: change the release command
+
+change the release command with tag in order to test if the unauthorized is resolved ([`b4826ae`](https://gitlab.com/ai-services/ai-service-template/-/commit/b4826aed5fa5affab8d12e887547ee024b0917c1))
+
+* fix: update readme commands
+
+update commands to include both  building tags and only-push commands ([`4ba5917`](https://gitlab.com/ai-services/ai-service-template/-/commit/4ba591794192cbe1234add1b8060e606093e7584))
+
+* fix: change upload_to_vcs_release to false
+
+changing the config so that the ([`68ad4d2`](https://gitlab.com/ai-services/ai-service-template/-/commit/68ad4d2421a16b4315540b373d35703b41cce55e))
+
+* fix(versioning): trying fix config for unauthorized gitlab connection ([`98c4f83`](https://gitlab.com/ai-services/ai-service-template/-/commit/98c4f83be2438a1941b9254cc597c969076cba3d))
+
+### Test
+
+* test: commenting out gitlab token
+
+commenting out gitlab token to resolve unauthorized error ([`1ab4d59`](https://gitlab.com/ai-services/ai-service-template/-/commit/1ab4d591d1933dd78446ec2913b306b6866ed904))
 
 ### Unknown
 
@@ -57,14 +45,6 @@ fixing the commit message to be in angular commit style. testing the auto versio
 * &lt;feat&gt;(versioning): add versioning configs
 
 Adding versioning config to the pyproject using python-semantic-release, testing the auto commit message reading by semantic-release ([`6fd2a65`](https://gitlab.com/ai-services/ai-service-template/-/commit/6fd2a65e98d30cbdc9fd67f78b2fcc2070a8de5f))
-
-
-## v0.0.1 (2024-01-21)
-
-
-## v0.0.0 (2024-01-21)
-
-### Unknown
 
 * fix lint issue ([`c3b221d`](https://gitlab.com/ai-services/ai-service-template/-/commit/c3b221dc5d2b6b9504c0499c49a3fa388b6aa81f))
 
