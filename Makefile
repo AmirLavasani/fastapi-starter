@@ -59,7 +59,12 @@ build-wheel:
 clean:
 	rm -rf dist/ build/ docs/
 
+# Install this project as a pypi package
 install:
 	pip install .
+
+# Run tests and write the coverage in html format
+tests:
+	pytest --disable-warnings --cov=app --cov-report html tests/
 
 all: clean lint docz summary package-build install
