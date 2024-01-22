@@ -22,7 +22,9 @@ async def lifespan(app: FastAPI):
     logger.debug("shutting down gracefully...".upper())
 
 
-app = FastAPI(lifespan=lifespan, title="FastAPI AI Service Template", version=__version__)
+app = FastAPI(
+    lifespan=lifespan, title="FastAPI AI Service Template", version=__version__
+)
 app = gr.mount_gradio_app(app, gr_interface, path="/ui")
 
 register_routers(app)

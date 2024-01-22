@@ -9,6 +9,4 @@ from .version_router import router as version_router
 
 
 def register_routers(app: FastAPI):
-    app.include_router(
-        version_router, prefix="/version", tags=["version"]
-    )
+    app.include_router(version_router, prefix="/version", tags=["version"])

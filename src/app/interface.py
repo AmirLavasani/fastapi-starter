@@ -4,7 +4,7 @@ import asyncio
 import gradio as gr
 
 
-service_description = '''
+service_description = """
 # AI Service Template
 
 Welcome to the AI Service Template repository! This template is designed for building AI services
@@ -25,7 +25,7 @@ using FastAPI as the REST API server, with Docker and docker-compose for contain
 
 - **tests:** Primary folder for unit tests and integration tests.
 
-'''
+"""
 
 
 def greet(name, intensity):
@@ -39,7 +39,7 @@ gr_interface = gr.Interface(
     examples=[["Hello", 5], ["Hi", 2]],
     title="AI Service Template",
     description=service_description,
-    allow_flagging='never',
+    allow_flagging="never",
     flagging_dir=os.path.abspath("app/assets/flagged"),
     concurrency_limit=5,
 )
