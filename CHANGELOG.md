@@ -2,6 +2,19 @@
 
 
 
+## v0.4.0 (2024-01-22)
+
+### Feature
+
+* feat(testing): add pytest and code coverage
+
+add pytest testing and coverage to the project. tests should be written in tests/ folder and can be run by the `make tests` command. ([`200f3c2`](https://gitlab.com/ai-services/ai-service-template/-/commit/200f3c202b120d0e00a338391b1b0cb2a0ebea5c))
+
+### Unknown
+
+* Add pytest-cov to dev requirements ([`d9291a3`](https://gitlab.com/ai-services/ai-service-template/-/commit/d9291a3629c4e28c206d6a3ac6fd0dc47e765e07))
+
+
 ## v0.3.5 (2024-01-22)
 
 ### Fix
