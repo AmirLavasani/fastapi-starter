@@ -2,6 +2,15 @@
 
 
 
+## v0.4.1 (2024-01-22)
+
+### Fix
+
+* fix(testing): rename target
+
+rename Makefile target to avoid keyword similarities ([`ab6c9f9`](https://gitlab.com/ai-services/ai-service-template/-/commit/ab6c9f96418b3864e0806a58e6e9c82675f82054))
+
+
 ## v0.4.0 (2024-01-22)
 
 ### Feature
