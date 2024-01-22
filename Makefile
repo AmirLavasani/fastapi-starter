@@ -58,3 +58,5 @@ build-wheel:
 # Clean up generated artifacts and build files
 clean:
 	rm -rf dist/ build/ docs/
+
+all: clean lint docz summary package-build

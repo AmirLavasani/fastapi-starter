@@ -166,7 +166,7 @@ logging_use_named_masks = false
 major_on_zero = true
 tag_format = "v{version}"
 version_variables = ["src/app/version.py:__version__"]
-build_command = "make package-build"
+build_command = "make all"
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
@@ -199,7 +199,7 @@ default = "semantic-release <semantic-release>"
 [tool.semantic_release.commit_parser_options]
 allowed_tags = ["build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test"]
 minor_tags = ["feat", "refactor"]
-patch_tags = ["fix", "perf", "chore", "docs", "test", "build"]
+patch_tags = ["fix", "perf", "chore", "docs", "test", "build", "style"]
 
 [tool.semantic_release.remote]
 name = "origin"
