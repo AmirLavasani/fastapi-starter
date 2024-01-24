@@ -2,6 +2,21 @@
 
 
 
+## v0.5.1 (2024-01-24)
+
+### Documentation
+
+* docs: add eureka ([`549c3a3`](https://gitlab.com/ai-services/ai-service-template/-/commit/549c3a3781e9cd120f3a2f838626e128d3af6e41))
+
+### Fix
+
+* fix: change the building order ([`c63a2c2`](https://gitlab.com/ai-services/ai-service-template/-/commit/c63a2c213895985f72a323a7902bf3b25d59c8ca))
+
+### Style
+
+* style: update using black ([`13b591b`](https://gitlab.com/ai-services/ai-service-template/-/commit/13b591be11db48d9dfe2e4847c5c520f5ecd9e21))
+
+
 ## v0.5.0 (2024-01-24)
 
 ### Documentation
