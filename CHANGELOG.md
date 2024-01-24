@@ -2,6 +2,25 @@
 
 
 
+## v0.5.0 (2024-01-24)
+
+### Documentation
+
+* docs: update readme
+
+update readme to include all the files needs renaming ([`4257169`](https://gitlab.com/ai-services/ai-service-template/-/commit/4257169328cc7082d3fc052830e2f86c3812dabb))
+
+### Feature
+
+* feat: add eureka
+
+add eureka service registery to the project. It will now register its service name in the serivce discovery provided by EUREKA_URL ([`dc8199d`](https://gitlab.com/ai-services/ai-service-template/-/commit/dc8199d9a78265cd6ac8306d997133338856b78e))
+
+### Fix
+
+* fix: activate env in script ([`eca5d60`](https://gitlab.com/ai-services/ai-service-template/-/commit/eca5d60a3c09978656fa81e1d1d277046efd8a46))
+
+
 ## v0.4.1 (2024-01-22)
 
 ### Fix
