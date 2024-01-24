@@ -68,13 +68,16 @@ git remote rename origin template
 git remote add origin http://172.31.112.27/ai-services/your-service-project.git
 ```
 
-3. change `ai-service-template` in the following locations to your project service name.
+3. rename `ai-service-template` in the following locations to your project service name.
 - docker-compose.yml
 - Makefile
 - setup.sh
 - README.md
 - interface.py
 - main.py (docstring, fastapi, and root endpoint)
+- utils/eureka.py (app-name)
+
+search for `ai-service-template` to make sure you have renamed to your project name.
 
 4. create conda env and running the `setup.sh` file, and installing the dependencies.
 ```bash
