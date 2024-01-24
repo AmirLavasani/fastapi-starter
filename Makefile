@@ -67,4 +67,4 @@ install:
 testz:
 	pytest --disable-warnings --cov=app --cov-report html tests/
 
-all: clean lint docz summary testz package-build install
+all: clean lint docz summary install testz package-build
