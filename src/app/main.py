@@ -23,18 +23,22 @@ async def lifespan(app: FastAPI):
     await register_service()
 
     yield
-    
+
     print("shutting down gracefully...".upper())
     await unregister_service()
 
 
 app = FastAPI(
-    lifespan=lifespan, 
-    title="FastAPI AI Service Template", 
+    lifespan=lifespan,
+    title="FastAPI AI Service Template",
     version=__version__,
     root_path=os.environ.get("FASTAPI_ROOT_PATH", "/api/v1/ai-service-template"),
-    docs_url=os.environ.get("FASTAPI_DOCS_URL", "/public/ai-service-template/swagger.html"),
-    openapi_url=os.environ.get("FASTAPI_OPENAPI_URL", "/public/ai-service-template/api-docs"),
+    docs_url=os.environ.get(
+        "FASTAPI_DOCS_URL", "/public/ai-service-template/swagger.html"
+    ),
+    openapi_url=os.environ.get(
+        "FASTAPI_OPENAPI_URL", "/public/ai-service-template/api-docs"
+    ),
 )
 
 app = gr.mount_gradio_app(app, gr_interface, path="/ui")

@@ -3,7 +3,8 @@ import os
 import py_eureka_client.eureka_client as eureka_client
 
 
-EUREKA_URL = os.environ.get('EUREKA_URL')
+EUREKA_URL = os.environ.get("EUREKA_URL")
+
 
 async def register_service():
     if EUREKA_URL:
@@ -19,8 +20,10 @@ async def register_service():
         except Exception as e:
             print(f"Error Occured in Registering: {e}")
     else:
-        print("EUREKA_URL env variable not set. Not registering to the discovery service")
-    
+        print(
+            "EUREKA_URL env variable not set. Not registering to the discovery service"
+        )
+
 
 async def unregister_service():
     if EUREKA_URL:
