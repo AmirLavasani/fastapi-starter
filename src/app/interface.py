@@ -32,17 +32,19 @@ def greet(name, intensity):
     return "Hello " * intensity + name + "!"
 
 
-gr_interface = gr.Interface(
-    fn=greet,
-    inputs=["text", "slider"],
-    outputs=["text"],
-    examples=[["Hello", 5], ["Hi", 2]],
-    title="AI Service Template",
-    description=service_description,
-    allow_flagging="never",
-    flagging_dir=os.path.abspath("app/assets/flagged"),
-    concurrency_limit=5,
-)
+def get_gr_interface():
+    return gr.Interface(
+        fn=greet,
+        inputs=["text", "slider"],
+        outputs=["text"],
+        examples=[["Hello", 5], ["Hi", 2]],
+        title="AI Service Template",
+        description=service_description,
+        allow_flagging="never",
+        flagging_dir=os.path.abspath("app/assets/flagged"),
+        concurrency_limit=5,
+    )
+
 
 if __name__ == "__main__":
-    asyncio.run(gr_interface.launch())
+    asyncio.run(get_gr_interface().launch())
