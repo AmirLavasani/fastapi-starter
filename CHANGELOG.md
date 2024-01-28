@@ -2,6 +2,17 @@
 
 
 
+## v0.6.1 (2024-01-28)
+
+### Fix
+
+* fix: update docs ([`d9be9af`](https://gitlab.com/ai-services/ai-service-template/-/commit/d9be9af4e1d6181f369e80f7e264ba3e60cf0a14))
+
+### Style
+
+* style: fix lint issues ([`f79263d`](https://gitlab.com/ai-services/ai-service-template/-/commit/f79263d4ca1520f9d8a4bde3ac5b7a4443ac1757))
+
+
 ## v0.6.0 (2024-01-28)
 
 ### Feature
