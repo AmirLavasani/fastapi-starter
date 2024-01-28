@@ -2,6 +2,13 @@
 
 
 
+## v0.5.5 (2024-01-28)
+
+### Style
+
+* style: change default port to 8080 ([`7a39440`](https://gitlab.com/ai-services/ai-service-template/-/commit/7a39440b5a836870719977a6c5306ca6973ad194))
+
+
 ## v0.5.4 (2024-01-28)
 
 ### Fix
