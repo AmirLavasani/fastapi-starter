@@ -2,6 +2,13 @@
 
 
 
+## v0.6.2 (2024-01-28)
+
+### Fix
+
+* fix: update uninstall command ([`544f8c2`](https://gitlab.com/ai-services/ai-service-template/-/commit/544f8c2c3a8114479bab9314a8c91fc55f70df20))
+
+
 ## v0.6.1 (2024-01-28)
 
 ### Fix
