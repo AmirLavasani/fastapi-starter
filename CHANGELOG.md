@@ -2,6 +2,13 @@
 
 
 
+## v0.5.2 (2024-01-28)
+
+### Style
+
+* style: updated gradio interface instance ([`e8b8e7c`](https://gitlab.com/ai-services/ai-service-template/-/commit/e8b8e7c0a6fb4956a895a51d32ff152ffc28b497))
+
+
 ## v0.5.1 (2024-01-24)
 
 ### Documentation
