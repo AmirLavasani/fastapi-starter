@@ -1,6 +1,7 @@
 import socket
 import os
 import py_eureka_client.eureka_client as eureka_client
+from loguru import logger
 
 
 EUREKA_URL = os.environ.get("EUREKA_URL")
@@ -18,9 +19,9 @@ async def register_service():
                 instance_host=my_ip_address,
             )
         except Exception as e:
-            print(f"Error Occured in Registering: {e}")
+            logger.error(f"Error Occured in Registering: {e}")
     else:
-        print(
+        logger.warning(
             "EUREKA_URL env variable not set. Not registering to the discovery service"
         )
 
@@ -30,4 +31,4 @@ async def unregister_service():
         try:
             eureka_client.stop_async()
         except Exception as e:
-            print(f"Error Occured in Unregistering: {e}")
+            logger.error(f"Error Occured in Unregistering: {e}")
