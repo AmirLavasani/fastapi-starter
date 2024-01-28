@@ -2,6 +2,15 @@
 
 
 
+## v0.5.4 (2024-01-28)
+
+### Fix
+
+* fix: changed python path
+
+changed python path to include src folder. After changing the structure the more standard src/app structure the python path should include src in order for the Makefile commands to work properly without installing the package. ([`3c26074`](https://gitlab.com/ai-services/ai-service-template/-/commit/3c2607473e8f2c3b62b6c1f6a4b7683b7d99271b))
+
+
 ## v0.5.3 (2024-01-28)
 
 ### Documentation
