@@ -6,6 +6,7 @@ from app.main import run_service
 
 cli = typer.Typer()
 
+
 @cli.command()
 def run(host: str = "0.0.0.0", port: int = 8080):
     run_service(host, port)
