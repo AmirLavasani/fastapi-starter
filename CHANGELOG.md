@@ -2,6 +2,15 @@
 
 
 
+## v0.6.0 (2024-01-28)
+
+### Feature
+
+* feat: add cli
+
+adding a cli using typer. now after installing the service using pip a command cli will be accessible. the cli has version and run command. ([`226d60d`](https://gitlab.com/ai-services/ai-service-template/-/commit/226d60d7b1e776a6666782a62eea5149339e690f))
+
+
 ## v0.5.5 (2024-01-28)
 
 ### Style
