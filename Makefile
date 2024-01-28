@@ -63,8 +63,11 @@ clean:
 install:
 	pip install .
 
+uninstall:
+	pip uninstall ai-service-template
+
 # Run tests and write the coverage in html format
 testz:
 	pytest --disable-warnings --cov=app --cov-report html tests/
 
-all: clean lint docz summary install testz package-build
+all: clean lint docz summary install testz package-build uninstall
