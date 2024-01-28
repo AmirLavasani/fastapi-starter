@@ -2,6 +2,13 @@
 
 
 
+## v0.6.3 (2024-01-28)
+
+### Fix
+
+* fix: update print to logger ([`3accda3`](https://gitlab.com/ai-services/ai-service-template/-/commit/3accda3c276eca2845ec93ae344f2d57178c2d47))
+
+
 ## v0.6.2 (2024-01-28)
 
 ### Fix
