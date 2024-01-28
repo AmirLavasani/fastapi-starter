@@ -7,7 +7,7 @@ from app.version import __version__
 router = APIRouter()
 
 
-@router.get("/", response_model=Version, status_code=status.HTTP_200_OK)
+@router.get("/version", response_model=Version, status_code=status.HTTP_200_OK)
 async def get_app_version():
     """
     Retrieve the application version.

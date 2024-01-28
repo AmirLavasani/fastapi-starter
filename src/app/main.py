@@ -13,8 +13,19 @@ from loguru import logger
 import gradio as gr
 
 from app.version import __version__
-from app.interface import gr_interface
+from app.interface import get_gr_interface
 from app.utils.eureka import register_service, unregister_service
+
+
+service_description = """
+# AI Service Template 🚀
+Welcome to the AI Service Template repository! 🤖 This template is designed for building AI services
+using FastAPI as the REST API server, with Docker and docker-compose for containerization. 🐳
+
+### GET `/version`
+
+This endpoints return the version of the code.
+"""
 
 
 @asynccontextmanager
@@ -24,24 +35,33 @@ async def lifespan(app: FastAPI):
 
     yield
 
-    print("shutting down gracefully...".upper())
+    logger.debug("shutting down gracefully...".upper())
     await unregister_service()
 
 
 app = FastAPI(
     lifespan=lifespan,
     title="FastAPI AI Service Template",
+    description=service_description,
+    summary="This template is designed for building AI services using FastAPI as the REST API server",
     version=__version__,
-    root_path=os.environ.get("FASTAPI_ROOT_PATH", "/api/v1/ai-service-template"),
+    # root_path=os.environ.get("FASTAPI_ROOT_PATH", "/api/v1"),
     docs_url=os.environ.get(
         "FASTAPI_DOCS_URL", "/public/ai-service-template/swagger.html"
     ),
     openapi_url=os.environ.get(
         "FASTAPI_OPENAPI_URL", "/public/ai-service-template/api-docs"
     ),
+    # servers=[
+    #     # {"url": "https://stag.example.com", "description": "Staging environment"},
+    #     # {"url": "https://prod.example.com", "description": "Production environment"},
+    #     {"url": "http://127.0.0.1:8000/api/v1", "description": "Testing environment"},
+    # ]
 )
 
-app = gr.mount_gradio_app(app, gr_interface, path="/ui")
+if os.environ.get("DEV_MODE", "off") == "on":
+    logger.debug("dev mode on. adding gradio interface...".upper())
+    app = gr.mount_gradio_app(app, get_gr_interface(), path="/ui")
 
 register_routers(app)
 
