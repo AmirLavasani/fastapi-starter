@@ -61,7 +61,7 @@ app = FastAPI(
 
 if os.environ.get("DEV_MODE", "off") == "on":
     logger.debug("dev mode on. adding gradio interface...".upper())
-    app = gr.mount_gradio_app(app, get_gr_interface(), path="/ui")
+    app = gr.mount_gradio_app(app, get_gr_interface(), path="/api/v1/ai-service-template/ui")
 
 register_routers(app)
 
@@ -72,10 +72,10 @@ async def root():
     return {"message": "Welcome to the FastAPI AI Service Template"}
 
 
-def run_service():
+def run_service(host: str = "0.0.0.0", port: int = 8080):
     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+    uvicorn.run(app, host=host, port=port)
 
 
 if __name__ == "__main__":
