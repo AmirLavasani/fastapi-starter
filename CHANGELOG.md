@@ -2,6 +2,23 @@
 
 
 
+## v0.5.3 (2024-01-28)
+
+### Documentation
+
+* docs: update docs ([`e68647e`](https://gitlab.com/ai-services/ai-service-template/-/commit/e68647e97217de3f8bc2885f907b516bad36bfd6))
+
+### Fix
+
+* fix: add /api/v1 prefix to routes
+
+the current gateway does not strip the prefix from the url. adding fastapi root_path will interfere with swagger html.
+
+The only solution is to add this prefix to each of the routers. the best practice is to strip the prefix in the gateway. it might get updated after changing the gateway. ([`3466a31`](https://gitlab.com/ai-services/ai-service-template/-/commit/3466a3167db707757360820e66c35ffcb33d944e))
+
+* fix: uninstall package after versioning ([`82ec8fc`](https://gitlab.com/ai-services/ai-service-template/-/commit/82ec8fc266a07bf53b0f6bfad257762c4de297e1))
+
+
 ## v0.5.2 (2024-01-28)
 
 ### Style
