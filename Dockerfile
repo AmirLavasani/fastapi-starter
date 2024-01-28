@@ -28,7 +28,7 @@ COPY . .
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Expose the port where the FastAPI app will run
-EXPOSE 8000
+EXPOSE 8080
 
 # Command to run the FastAPI app using Uvicorn or other ASGI servers
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
