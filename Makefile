@@ -64,7 +64,7 @@ install:
 	pip install .
 
 uninstall:
-	pip uninstall ai-service-template
+	pip uninstall ai-service-template -y
 
 # Run tests and write the coverage in html format
 testz:
