@@ -2,6 +2,19 @@
 
 
 
+## v0.6.4 (2024-01-30)
+
+### Build
+
+* build: add ruff to reqs ([`1c0d8e8`](https://gitlab.com/ai-services/ai-service-template/-/commit/1c0d8e8c405174eafc70b5dade5de4d6e8dad4e4))
+
+* build: use ruff instead of flake8 ([`729558b`](https://gitlab.com/ai-services/ai-service-template/-/commit/729558b4c12dadf00f787b8e27a0a9ec95a40be3))
+
+### Style
+
+* style: reformat using black ([`717dd4c`](https://gitlab.com/ai-services/ai-service-template/-/commit/717dd4c7bb2241ef454a183848d9f5115c1f8fc1))
+
+
 ## v0.6.3 (2024-01-28)
 
 ### Fix
