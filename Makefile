@@ -13,7 +13,7 @@ run:
 # Run mypy for type checking, Run flake8 for linting
 lint:
 	mypy src/app
-	flake8 src/app
+	ruff check src/app
 
 # Generate HTML documentation using pdoc
 docz:
