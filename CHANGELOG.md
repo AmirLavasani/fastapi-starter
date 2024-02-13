@@ -2,6 +2,31 @@
 
 
 
+## v0.6.5 (2024-02-13)
+
+### Build
+
+* build(deps): bump fastapi from 0.104.1 to 0.109.1
+
+Bumps [fastapi](https://github.com/tiangolo/fastapi) from 0.104.1 to 0.109.1.
+- [Release notes](https://github.com/tiangolo/fastapi/releases)
+- [Commits](https://github.com/tiangolo/fastapi/compare/0.104.1...0.109.1)
+
+---
+updated-dependencies:
+- dependency-name: fastapi
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`27f1aac`](https://gitlab.com/ai-services/ai-service-template/-/commit/27f1aac042dc678954f19c7bb95186759675edb3))
+
+### Unknown
+
+* Merge pull request #2 from AmirLavasani/dependabot/pip/fastapi-0.109.1
+
+build(deps): bump fastapi from 0.104.1 to 0.109.1 ([`a7b2d1d`](https://gitlab.com/ai-services/ai-service-template/-/commit/a7b2d1d4c38649f68e0c27b02e355ff11b8b0fd5))
+
+
 ## v0.6.4 (2024-01-30)
 
 ### Build
