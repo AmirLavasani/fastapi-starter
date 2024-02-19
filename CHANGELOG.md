@@ -2,6 +2,15 @@
 
 
 
+## v0.6.6 (2024-02-19)
+
+### Fix
+
+* fix: separate template version
+
+separate the template version from the service version so that template and service can have different versions ([`ed19025`](https://gitlab.com/ai-services/ai-service-template/-/commit/ed190254062e0f814a68b806264645e1e969d3e9))
+
+
 ## v0.6.5 (2024-02-13)
 
 ### Build
