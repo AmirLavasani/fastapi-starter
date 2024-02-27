@@ -2,6 +2,25 @@
 
 
 
+## v0.6.7 (2024-02-27)
+
+### Fix
+
+* fix: remove unused imports ([`b1ef538`](https://gitlab.com/ai-services/ai-service-template/-/commit/b1ef53825709d6fa92d3b406dd948b05678e6fbe))
+
+* fix: use default paths for docs and openapi urls
+
+use env variables FASTAPI_DOCS_URL, FASTAPI_OPENAPI_URL and FASTAPI_GRADIO_INTERFACE_URL to change the default behaviour ([`364727b`](https://gitlab.com/ai-services/ai-service-template/-/commit/364727b1ef3359c7d7522fde07a7d3df20aaaa73))
+
+* fix: add python path to run and test commands ([`483bbde`](https://gitlab.com/ai-services/ai-service-template/-/commit/483bbde6dea6ca4698eb2eb2ad5377dae6b8d824))
+
+### Style
+
+* style: fix formatting using black ([`d3d6047`](https://gitlab.com/ai-services/ai-service-template/-/commit/d3d6047351b66598f924513ffe99c2b1e9d23954))
+
+* style: add service and template version to cli command ([`f08ddff`](https://gitlab.com/ai-services/ai-service-template/-/commit/f08ddff92428cfa65aa7fc559188b4103b652480))
+
+
 ## v0.6.6 (2024-02-19)
 
 ### Fix
