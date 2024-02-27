@@ -47,17 +47,21 @@ app = FastAPI(
     version=__version__,
     # root_path=os.environ.get("FASTAPI_ROOT_PATH", "/api/v1"),
     docs_url=os.environ.get(
-        "FASTAPI_DOCS_URL", "/public/ai-service-template/swagger.html"
+        "FASTAPI_DOCS_URL", "/docs"
     ),
     openapi_url=os.environ.get(
-        "FASTAPI_OPENAPI_URL", "/public/ai-service-template/api-docs"
+        "FASTAPI_OPENAPI_URL", "/openapi.json"
     ),
 )
 
 if os.environ.get("DEV_MODE", "off") == "on":
     logger.debug("dev mode on. adding gradio interface...".upper())
     app = gr.mount_gradio_app(
-        app, get_gr_interface(), path="/api/v1/ai-service-template/ui"
+        app,
+        get_gr_interface(),
+        path=os.environ.get(
+            "FASTAPI_GRADIO_INTERFACE_URL", "/ui"
+        )
     )
 
 register_routers(app)
