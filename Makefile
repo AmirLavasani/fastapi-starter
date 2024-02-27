@@ -8,7 +8,7 @@ install-deps-dev:
 
 # Run the FastAPI app using uvicorn with auto-reload
 run:
-	uvicorn app.main:app --reload
+	export PYTHONPATH=`pwd`/src && uvicorn app.main:app --reload
 
 # Run mypy for type checking, Run flake8 for linting
 lint:
@@ -68,6 +68,6 @@ uninstall:
 
 # Run tests and write the coverage in html format
 testz:
-	pytest --disable-warnings --cov=app --cov-report html tests/
+	export PYTHONPATH=`pwd`/src && pytest --disable-warnings --cov=app --cov-report html tests/
 
 all: clean lint docz summary install testz package-build uninstall
