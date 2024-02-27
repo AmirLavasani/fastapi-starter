@@ -61,7 +61,7 @@ clean:
 
 # Install this project as a pypi package
 install:
-	pip install .
+	pip install . --upgrade
 
 uninstall:
 	pip uninstall ai-service-template -y
