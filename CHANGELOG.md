@@ -2,6 +2,13 @@
 
 
 
+## v0.6.11 (2024-02-27)
+
+### Build
+
+* build: add art deps ([`96e8b40`](https://gitlab.com/ai-services/ai-service-template/-/commit/96e8b40a7d0d76467d0035cf5c3b522365e74d66))
+
+
 ## v0.6.10 (2024-02-27)
 
 ### Build
