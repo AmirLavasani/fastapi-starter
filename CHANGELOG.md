@@ -2,6 +2,17 @@
 
 
 
+## v0.6.10 (2024-02-27)
+
+### Build
+
+* build: separate template and service version completely ([`afaceca`](https://gitlab.com/ai-services/ai-service-template/-/commit/afaceca953cec46f9b74e203a32dd77fd43dcde7))
+
+### Documentation
+
+* docs: update cli ([`279e671`](https://gitlab.com/ai-services/ai-service-template/-/commit/279e671cde726d8b22025c7d82560ae907bbb52b))
+
+
 ## v0.6.9 (2024-02-27)
 
 ### Build
