@@ -2,6 +2,25 @@
 
 
 
+## v0.6.9 (2024-02-27)
+
+### Build
+
+* build: add a dev command to makefile
+
+add a dev command that runs the uvicorn server and a run command that uses the package cli ([`26b0041`](https://gitlab.com/ai-services/ai-service-template/-/commit/26b0041be62ac74483aa24a9c99405813ad38c4e))
+
+### Fix
+
+* fix: specify the import module ([`206d105`](https://gitlab.com/ai-services/ai-service-template/-/commit/206d10511f6f475d2eedcb7d130a08131275ef22))
+
+* fix: update make install command ([`e5ae875`](https://gitlab.com/ai-services/ai-service-template/-/commit/e5ae87587417d6a29838cd80a2e70d8a9faa8875))
+
+### Style
+
+* style: add logo in cli command ([`66d7ce6`](https://gitlab.com/ai-services/ai-service-template/-/commit/66d7ce613ebf75b5a316debcd659e4231a40bd63))
+
+
 ## v0.6.8 (2024-02-27)
 
 ### Fix
