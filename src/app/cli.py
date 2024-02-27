@@ -1,6 +1,6 @@
 import typer
 from colorama import Fore, Style
-from art import *
+from art import text2art
 
 from app.version import __version__, __template_version__
 
