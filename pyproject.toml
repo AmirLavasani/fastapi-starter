@@ -165,7 +165,8 @@ commit_parser = "angular"
 logging_use_named_masks = false
 major_on_zero = true
 tag_format = "v{version}"
-version_variables = ["src/app/version.py:__version__"]
+# change this into __version__ in derived services
+version_variables = ["src/app/version.py:__template_version__"]
 build_command = "make all"
 
 [tool.semantic_release.branches.main]
