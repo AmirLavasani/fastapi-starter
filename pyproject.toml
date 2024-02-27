@@ -107,7 +107,8 @@ dependencies = [ # Optional
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "app.version.__version__"}
+# change this into __version__ in derived services
+version = {attr = "app.version.__template_version__"}
 
 # List additional groups of dependencies here (e.g. development
 # dependencies). Users will be able to install these using the "extras"

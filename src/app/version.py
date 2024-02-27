@@ -62,4 +62,4 @@ $               BREAKING CHANGE: plotting module wont exist after this release."
 """
 
 __template_version__ = "0.6.9"
-__version__ = __template_version__
+__version__ = "0.1.0"
