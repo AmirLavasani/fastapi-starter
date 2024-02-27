@@ -46,12 +46,8 @@ app = FastAPI(
     summary="This template is designed for building AI services using FastAPI as the REST API server",
     version=__version__,
     # root_path=os.environ.get("FASTAPI_ROOT_PATH", "/api/v1"),
-    docs_url=os.environ.get(
-        "FASTAPI_DOCS_URL", "/docs"
-    ),
-    openapi_url=os.environ.get(
-        "FASTAPI_OPENAPI_URL", "/openapi.json"
-    ),
+    docs_url=os.environ.get("FASTAPI_DOCS_URL", "/docs"),
+    openapi_url=os.environ.get("FASTAPI_OPENAPI_URL", "/openapi.json"),
 )
 
 if os.environ.get("DEV_MODE", "off") == "on":
@@ -59,9 +55,7 @@ if os.environ.get("DEV_MODE", "off") == "on":
     app = gr.mount_gradio_app(
         app,
         get_gr_interface(),
-        path=os.environ.get(
-            "FASTAPI_GRADIO_INTERFACE_URL", "/ui"
-        )
+        path=os.environ.get("FASTAPI_GRADIO_INTERFACE_URL", "/ui"),
     )
 
 register_routers(app)
