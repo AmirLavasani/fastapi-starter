@@ -1,23 +1,35 @@
 import typer
 from colorama import Fore, Style
+from art import *
 
 from app.version import __version__, __template_version__
-from app.main import run_service
 
 
 cli = typer.Typer()
 
-version_colored = Fore.CYAN + Style.BRIGHT + "v" + __version__ + Style.RESET_ALL
-template_version_colored = (
-    Fore.RED + Style.BRIGHT + "v" + __template_version__ + Style.RESET_ALL
-)
 
+def print_startup_logo():
+    version_colored = Fore.MAGENTA + Style.BRIGHT + "v" + __version__ + Style.RESET_ALL
+    template_version_colored = (
+        Fore.GREEN + Style.BRIGHT + "v" + __template_version__ + Style.RESET_ALL
+    )
+    project_name = '''.fastapi.\nstarter'''
+    # other selected fonts
+    # isometric1
+    # alpha
+    # smisome1
+    # starwars
+    logo = Fore.CYAN + Style.BRIGHT + text2art(project_name, font="tarty1") + Style.RESET_ALL
+    print(logo)
+    print(
+        f"\nRunning service {version_colored} 🚀 via fastapi-starter template {template_version_colored} 📦\n"
+    )
 
 @cli.command()
 def run(host: str = "0.0.0.0", port: int = 8080):
-    print(
-        f"Running service {version_colored} 🚀 via fastapi-starter template {template_version_colored} 📦"
-    )
+    print_startup_logo()
+
+    from app.main import run_service
     run_service(host, port)
 
 
