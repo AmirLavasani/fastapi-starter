@@ -7,8 +7,12 @@ install-deps-dev:
 	pip install -r requirements-dev.txt
 
 # Run the FastAPI app using uvicorn with auto-reload
-run:
+dev:
 	export PYTHONPATH=`pwd`/src && uvicorn app.main:app --reload
+
+# Run the service using the cli command aiservice
+run:
+	aiservice run
 
 # Run mypy for type checking, Run flake8 for linting
 lint:
