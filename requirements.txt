@@ -4,3 +4,4 @@ uvicorn==0.24.0.post1
 loguru==0.7.2
 gradio==4.14.0
 py-eureka-client==0.11.8
+art==6.1
