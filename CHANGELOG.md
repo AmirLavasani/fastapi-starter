@@ -2,6 +2,13 @@
 
 
 
+## v0.6.8 (2024-02-27)
+
+### Fix
+
+* fix: separate template and service version ([`2c36948`](https://gitlab.com/ai-services/ai-service-template/-/commit/2c369486725bc9dca3dc019af9e76f14a5fcbe31))
+
+
 ## v0.6.7 (2024-02-27)
 
 ### Fix
