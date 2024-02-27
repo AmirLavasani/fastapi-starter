@@ -1,5 +1,5 @@
 import typer
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 
 from app.version import __version__, __template_version__
 from app.main import run_service
