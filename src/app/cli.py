@@ -3,6 +3,7 @@ from colorama import Fore, Style
 from art import text2art
 
 from app.version import __version__, __template_version__
+from app.config import settings
 
 
 cli = typer.Typer()
@@ -32,7 +33,7 @@ def print_startup_logo():
 
 
 @cli.command()
-def run(host: str = "0.0.0.0", port: int = 8080):
+def run(host: str = settings.app_api_host, port: int = settings.app_api_port):
     print_startup_logo()
 
     from app.main import run_service

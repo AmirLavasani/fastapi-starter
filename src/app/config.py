@@ -13,20 +13,20 @@ class AppEnvEnum(str, Enum):
 
 
 class BaseAppSettings(BaseSettings):
-    app_name: str = Field("ai-service-template", env="CONFIG_APP_NAME")
-    app_api_host: str = Field("127.0.0.1", env="CONFIG_APP_API_HOST")
-    app_api_port: int = Field(8080, env="CONFIG_APP_API_PORT")
+    app_name: str = Field("ai-service-template", alias="CONFIG_APP_NAME")
+    app_api_host: str = Field("127.0.0.1", alias="CONFIG_APP_API_HOST")
+    app_api_port: int = Field(8080, alias="CONFIG_APP_API_PORT")
     app_running_env: AppEnvEnum = Field(
-        AppEnvEnum.DEVELOPMENT, env="CONFIG_APP_RUNNING_ENV"
+        AppEnvEnum.DEVELOPMENT, alias="CONFIG_APP_RUNNING_ENV"
     )
 
-    openapi_docs_url: str = Field("/docs", env="CONFIG_FASTAPI_DOCS_URL")
-    openapi_json_url: str = Field("/openapi.json", env="CONFIG_FASTAPI_OPENAPI_URL")
-    gradio_interface_enable: bool = Field(True, env="CONFIG_GRADIO_INTERFACE_ENABLE")
-    gradio_interface_url: str = Field("/ui", env="CONFIG_GRADIO_INTERFACE_URL")
+    openapi_docs_url: str = Field("/docs", alias="CONFIG_FASTAPI_DOCS_URL")
+    openapi_json_url: str = Field("/openapi.json", alias="CONFIG_FASTAPI_OPENAPI_URL")
+    gradio_interface_enable: bool = Field(True, alias="CONFIG_GRADIO_INTERFACE_ENABLE")
+    gradio_interface_url: str = Field("/ui", alias="CONFIG_GRADIO_INTERFACE_URL")
 
-    eureka_discovery_url: str = Field("127.0.0.1", env="CONFIG_EUREKA_DISCOVERY_URL")
-    eureka_discovery_enable: bool = Field(False, env="CONFIG_EUREKA_DISCOVERY_ENABLE")
+    eureka_discovery_url: str = Field("127.0.0.1", alias="CONFIG_EUREKA_DISCOVERY_URL")
+    eureka_discovery_enable: bool = Field(False, alias="CONFIG_EUREKA_DISCOVERY_ENABLE")
 
 
 class DevelopmentSettings(BaseAppSettings):
@@ -40,16 +40,16 @@ class StagingSettings(BaseAppSettings):
     # example of a database url that has different env variable names and
     # default value in different running env settings
     # database_url: str = Field(..., env="STAGING_DB_URL")
-    app_api_host: str = Field("0.0.0.0", env="CONFIG_APP_API_HOST")
-    eureka_discovery_enable: str = Field(True, env="CONFIG_EUREKA_DISCOVERY_ENABLE")
+    app_api_host: str = Field("0.0.0.0", alias="CONFIG_APP_API_HOST")
+    eureka_discovery_enable: bool = Field(True, alias="CONFIG_EUREKA_DISCOVERY_ENABLE")
 
 
 class ProductionSettings(BaseAppSettings):
     # example of a database url that has different env variable names and
     # default value in different running env settings
     # database_url: str = Field(..., env="PROD_DB_URL")
-    app_api_host: str = Field("0.0.0.0", env="CONFIG_APP_API_HOST")
-    gradio_interface_enable: bool = Field(False, env="CONFIG_GRADIO_INTERFACE_ENABLE")
+    app_api_host: str = Field("0.0.0.0", alias="CONFIG_APP_API_HOST")
+    gradio_interface_enable: bool = Field(False, alias="CONFIG_GRADIO_INTERFACE_ENABLE")
 
 
 @lru_cache
