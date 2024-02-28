@@ -12,3 +12,8 @@ def register_routers(app: FastAPI):
     app.include_router(
         version_router, prefix="/api/v1/ai-service-template", tags=["version"]
     )
+
+    # Root endpoint
+    @app.get("/")
+    async def root():
+        return {"message": "ok"}
