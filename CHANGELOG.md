@@ -2,6 +2,19 @@
 
 
 
+## v0.7.0 (2024-02-28)
+
+### Feature
+
+* feat: add configs
+
+Add a pydantic setting class to handle all the service configurations ([`415d05c`](https://gitlab.com/ai-services/ai-service-template/-/commit/415d05ca3b2eb3e910b10cf5f98358a0c529ef13))
+
+### Style
+
+* style: format using black ([`880bda7`](https://gitlab.com/ai-services/ai-service-template/-/commit/880bda707c30afe096dee9945adbdd6d0c5becfd))
+
+
 ## v0.6.11 (2024-02-27)
 
 ### Build
