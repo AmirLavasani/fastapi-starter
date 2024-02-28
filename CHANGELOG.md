@@ -2,6 +2,19 @@
 
 
 
+## v0.7.1 (2024-02-28)
+
+### Documentation
+
+* docs: update docs ([`c320b9a`](https://gitlab.com/ai-services/ai-service-template/-/commit/c320b9a079e09d19bc6d4c9aa235d8d873b4fdfd))
+
+### Fix
+
+* fix: fix pydantic bug
+
+replacing env param with alias to override the env variable name ([`d876112`](https://gitlab.com/ai-services/ai-service-template/-/commit/d876112e518ae1673b51ae4babef146b9b2000f4))
+
+
 ## v0.7.0 (2024-02-28)
 
 ### Feature
