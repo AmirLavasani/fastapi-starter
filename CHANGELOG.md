@@ -2,6 +2,15 @@
 
 
 
+## v0.7.2 (2024-03-03)
+
+### Unknown
+
+* Merge pull request #5 from AmirLavasani/dependabot/pip/gradio-4.19.2
+
+build(deps): bump gradio from 4.14.0 to 4.19.2 ([`d2a092c`](https://gitlab.com/ai-services/ai-service-template/-/commit/d2a092cbb1994a3b5be4be8e0db2fe93088a4e54))
+
+
 ## v0.7.1 (2024-02-28)
 
 ### Documentation
@@ -16,6 +25,23 @@ replacing env param with alias to override the env variable name ([`d876112`](ht
 
 
 ## v0.7.0 (2024-02-28)
+
+### Build
+
+* build(deps): bump gradio from 4.14.0 to 4.19.2
+
+Bumps [gradio](https://github.com/gradio-app/gradio) from 4.14.0 to 4.19.2.
+- [Release notes](https://github.com/gradio-app/gradio/releases)
+- [Changelog](https://github.com/gradio-app/gradio/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/gradio-app/gradio/compare/gradio@4.14.0...gradio@4.19.2)
+
+---
+updated-dependencies:
+- dependency-name: gradio
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`93ddd67`](https://gitlab.com/ai-services/ai-service-template/-/commit/93ddd672579edb49fa05a49a2a8be5a45d9792eb))
 
 ### Feature
 
