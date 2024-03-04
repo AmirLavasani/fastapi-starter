@@ -2,6 +2,13 @@
 
 
 
+## v0.8.2 (2024-03-04)
+
+### Build
+
+* build: add pydantic-settings to reqs ([`6617660`](https://gitlab.com/ai-services/ai-service-template/-/commit/661766054d2f6ef4d3cd381f41839d26cd8a00b2))
+
+
 ## v0.8.1 (2024-03-04)
 
 ### Documentation
