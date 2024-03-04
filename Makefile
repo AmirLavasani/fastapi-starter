@@ -74,4 +74,28 @@ uninstall:
 testz:
 	export PYTHONPATH=`pwd`/src && pytest --disable-warnings --cov=app --cov-report html tests/
 
+# After adding new messages in the code that needs to be localized using _('new message')
+# run the following:
+# make translate-extract (to extract new messages in messages.pot file)
+# make translate-update (to update .po files)
+# Translate new messages in each language
+# make translate-compile (to compile to .mo files)
+
+# Extract translatable strings from source files and generate a .pot (Portable Object Template) file
+translate-extract:
+	pybabel extract -o src/app/translations/messages.pot .
+
+# create translation files for each language you want to support
+translate-create:
+	pybabel init -i src/app/translations/messages.pot -d src/app/translations -l en
+	pybabel init -i src/app/translations/messages.pot -d src/app/translations -l fa
+
+# compiles .po message catalogs to compiled .mo files for all langs
+translate-compile:
+	pybabel compile -d src/app/translations
+
+# update messages catalogs for all langs
+translate-update:
+	pybabel update -i src/app/translations/messages.pot -d src/app/translations
+
 all: clean lint docz summary install testz package-build uninstall

@@ -10,8 +10,8 @@ from fastapi import FastAPI
 from app.routers import register_routers
 from app.utils.lifespan import lifespan
 from app.version import __version__
-
 from app.config import settings
+from app.utils.middleware import LanguageMiddleware
 
 
 service_description = """
@@ -41,6 +41,7 @@ app = FastAPI(
 
 
 register_routers(app)
+app.add_middleware(LanguageMiddleware)
 
 
 def run_service(host: str = settings.app_api_host, port: int = settings.app_api_port):

@@ -6,6 +6,7 @@
 
 from fastapi import FastAPI
 from .version_router import router as version_router
+from app.utils.i18n import _
 
 
 def register_routers(app: FastAPI):
@@ -16,4 +17,4 @@ def register_routers(app: FastAPI):
     # Root endpoint
     @app.get("/")
     async def root():
-        return {"message": "ok"}
+        return {"message": _("API is up and ok.")}
