@@ -2,6 +2,13 @@
 
 
 
+## v0.8.1 (2024-03-04)
+
+### Documentation
+
+* docs: add i18n docs ([`50dec4a`](https://gitlab.com/ai-services/ai-service-template/-/commit/50dec4a4c1efd1e491a3c3043193ca775d9a8ff6))
+
+
 ## v0.8.0 (2024-03-04)
 
 ### Feature
