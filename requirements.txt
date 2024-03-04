@@ -5,3 +5,4 @@ loguru==0.7.2
 gradio==4.19.2
 py-eureka-client==0.11.8
 art==6.1
+pydantic-settings==2.2.1
