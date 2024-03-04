@@ -2,6 +2,15 @@
 
 
 
+## v0.8.0 (2024-03-04)
+
+### Feature
+
+* feat: add i18n
+
+Add internationalization for reponses using gettext and babel utilizing fastapi middlewares and .po translations files ([`835d50c`](https://gitlab.com/ai-services/ai-service-template/-/commit/835d50ccb6d287c73401ba817aba8c552d5e205e))
+
+
 ## v0.7.2 (2024-03-03)
 
 ### Unknown
