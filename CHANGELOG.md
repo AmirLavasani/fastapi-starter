@@ -2,6 +2,17 @@
 
 
 
+## v0.8.3 (2024-03-05)
+
+### Build
+
+* build: add .mo translation data files to build lib ([`de1228b`](https://gitlab.com/ai-services/ai-service-template/-/commit/de1228ba2a6ed07c226c686727911216a2c6ae96))
+
+### Fix
+
+* fix: add babel to reqs ([`b748013`](https://gitlab.com/ai-services/ai-service-template/-/commit/b74801348063675e8bc6243f290058323c38bbd2))
+
+
 ## v0.8.2 (2024-03-04)
 
 ### Build
