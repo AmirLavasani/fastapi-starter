@@ -2,6 +2,13 @@
 
 
 
+## v0.8.4 (2024-03-05)
+
+### Fix
+
+* fix: refactor gradio ui mounting due to lifespan ([`4f6e313`](https://gitlab.com/ai-services/ai-service-template/-/commit/4f6e313b6ae0f9fdce33029cb057d225bcf6a6c0))
+
+
 ## v0.8.3 (2024-03-05)
 
 ### Build
