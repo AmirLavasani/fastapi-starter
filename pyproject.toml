@@ -147,10 +147,17 @@ aiservice = "app.cli:cli"
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.
 [tool.setuptools]
+package-dir = {"" = "src"}
+# By default, include-package-data is true in pyproject.toml, so you do
+# NOT have to specify this line.
+include-package-data = true
+
 # If there are data files included in your packages that need to be
 # installed, specify them here.
-# package-data = {"sample" = ["*.dat"]}
-package-dir = {"" = "src"}
+[tool.setuptools.package-data]
+# Add translation files to be included in the built package
+"app.translations" = ["*.mo", "*.po"]
+
 
 [build-system]
 # These are the assumed default build requirements from pip:

@@ -61,7 +61,8 @@ build-wheel:
 
 # Clean up generated artifacts and build files
 clean:
-	rm -rf dist/ build/ docs/
+	rm -rf dist/ build/
+	pip uninstall ai-service-template -y
 
 # Install this project as a pypi package
 install:
@@ -98,4 +99,4 @@ translate-compile:
 translate-update:
 	pybabel update -i src/app/translations/messages.pot -d src/app/translations
 
-all: clean lint docz summary install testz package-build uninstall
+all: clean lint docz summary translate-compile install testz package-build
