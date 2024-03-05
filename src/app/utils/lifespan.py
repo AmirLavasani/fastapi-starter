@@ -1,13 +1,10 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from loguru import logger
-
 import gradio as gr
+
 from app.interface import get_gr_interface
-
-
 from app.utils.eureka import register_service, unregister_service
-
 from app.config import settings
 
 
@@ -18,7 +15,7 @@ async def lifespan(app: FastAPI):
     await on_shutdown(app)
 
 
-async def on_startup(app: FastAPI) -> None:
+async def on_startup(app: FastAPI):
     """
     Executes startup tasks for the FastAPI application.
 
@@ -27,9 +24,11 @@ async def on_startup(app: FastAPI) -> None:
     """
     logger.debug("Starting up the app...")
     # Mount Gradio dev UI if configured
-    await mount_gradio_ui(app)
+    # Not working in this fashion
+    # await mount_gradio_ui(app)
     # Register to service discovery if applicable
     await register_service()
+    return app
 
 
 async def on_shutdown(app: FastAPI) -> None:
@@ -44,7 +43,7 @@ async def on_shutdown(app: FastAPI) -> None:
     await unregister_service()
 
 
-async def mount_gradio_ui(app: FastAPI) -> None:
+def mount_gradio_ui(app: FastAPI) -> FastAPI:
     """
     Mounts the Gradio UI interface if enabled.
 
@@ -58,3 +57,5 @@ async def mount_gradio_ui(app: FastAPI) -> None:
             get_gr_interface(),
             path=settings.gradio_interface_url,
         )
+        return app
+    return app

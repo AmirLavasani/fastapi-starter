@@ -12,6 +12,7 @@ from app.utils.lifespan import lifespan
 from app.version import __version__
 from app.config import settings
 from app.utils.middleware import LanguageMiddleware
+from app.utils.lifespan import mount_gradio_ui
 
 
 service_description = """
@@ -42,6 +43,7 @@ app = FastAPI(
 
 register_routers(app)
 app.add_middleware(LanguageMiddleware)
+app = mount_gradio_ui(app)
 
 
 def run_service(host: str = settings.app_api_host, port: int = settings.app_api_port):
