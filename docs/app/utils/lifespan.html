@@ -37,7 +37,7 @@
 <div class="desc"></div>
 </dd>
 <dt id="app.utils.lifespan.mount_gradio_ui"><code class="name flex">
-<span>async def <span class="ident">mount_gradio_ui</span></span>(<span>app: fastapi.applications.FastAPI) ‑> None</span>
+<span>def <span class="ident">mount_gradio_ui</span></span>(<span>app: fastapi.applications.FastAPI) ‑> fastapi.applications.FastAPI</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Mounts the Gradio UI interface if enabled.</p>
@@ -59,7 +59,7 @@
 </dl></div>
 </dd>
 <dt id="app.utils.lifespan.on_startup"><code class="name flex">
-<span>async def <span class="ident">on_startup</span></span>(<span>app: fastapi.applications.FastAPI) ‑> None</span>
+<span>async def <span class="ident">on_startup</span></span>(<span>app: fastapi.applications.FastAPI)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Executes startup tasks for the FastAPI application.</p>
