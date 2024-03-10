@@ -32,10 +32,10 @@ summary:
 docker-build:
 	docker build -t ai-service-template:latest .
 
-# Run Docker container, mapping port 8000 from container to host
+# Run Docker container, mapping port 8080 from container to host
 # Change ai-service-template to your project name
 docker-run:
-	docker run --rm -ti -p 8000:8000 ai-service-template:latest
+	docker run --rm -ti -p 8080:8080 ai-service-template:latest
 
 # Run semantic-release for versioning without VCS release
 version:
@@ -62,7 +62,7 @@ build-wheel:
 # Clean up generated artifacts and build files
 clean:
 	rm -rf dist/ build/
-	pip uninstall ai-service-template -y
+	$(MAKE) uninstall
 
 # Install this project as a pypi package
 install:
@@ -99,4 +99,12 @@ translate-compile:
 translate-update:
 	pybabel update -i src/app/translations/messages.pot -d src/app/translations
 
-all: clean lint docz summary translate-compile install testz package-build
+all:      
+	$(MAKE) clean
+	$(MAKE) lint
+	$(MAKE) docz
+	$(MAKE) summary
+	$(MAKE) translate-compile
+	$(MAKE) install
+	$(MAKE) testz
+	$(MAKE) package-build
