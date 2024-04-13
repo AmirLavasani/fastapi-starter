@@ -2,6 +2,23 @@
 
 
 
+## v0.8.5 (2024-04-13)
+
+### Build
+
+* build: add colorama to reqs ([`75a1ee7`](https://gitlab.com/ai-services/ai-service-template/-/commit/75a1ee7ef9dc5921d77f33e18caa87f7db003ad9))
+
+* build: change default port to 8080 to match the dockerfile ([`2eebe6c`](https://gitlab.com/ai-services/ai-service-template/-/commit/2eebe6c825e655fe552c73ed03f9a4b193cb6b9e))
+
+### Documentation
+
+* docs: update ([`c2545aa`](https://gitlab.com/ai-services/ai-service-template/-/commit/c2545aac4d04f7e0d062a508a6daf21bbfd736b6))
+
+### Test
+
+* test: add tests for i18n responses ([`82d9757`](https://gitlab.com/ai-services/ai-service-template/-/commit/82d9757e7253774516a6c1b999bd0fdd6ce52fc2))
+
+
 ## v0.8.4 (2024-03-05)
 
 ### Fix
