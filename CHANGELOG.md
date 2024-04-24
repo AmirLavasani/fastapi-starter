@@ -2,6 +2,13 @@
 
 
 
+## v0.8.6 (2024-04-24)
+
+### Build
+
+* build: fix ruff version ([`68f87c4`](https://gitlab.com/ai-services/ai-service-template/-/commit/68f87c463e25a52cba08df18a1bcf2ed73c4a932))
+
+
 ## v0.8.5 (2024-04-13)
 
 ### Build
