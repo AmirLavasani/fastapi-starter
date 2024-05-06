@@ -39,7 +39,7 @@ docker-run:
 
 # Run semantic-release for versioning without VCS release
 version:
-	semantic-release version --no-tag --no-vcs-release
+	semantic-release version --no-vcs-release
 
 # Run semantic-release in dry-run mode to print the next version
 next-version:
