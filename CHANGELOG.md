@@ -2,11 +2,43 @@
 
 
 
+## v0.8.7 (2024-05-06)
+
+### Build
+
+* build: push version tags by default ([`60307ad`](https://gitlab.com/ai-services/ai-service-template/-/commit/60307ade1fa57265e432581763fa851f4db98498))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of github.com:AmirLavasani/fastapi-starter ([`f4530d9`](https://gitlab.com/ai-services/ai-service-template/-/commit/f4530d9a31418363567f7b7edcd2ee4ce0dd8375))
+
+
 ## v0.8.6 (2024-04-24)
 
 ### Build
 
 * build: fix ruff version ([`68f87c4`](https://gitlab.com/ai-services/ai-service-template/-/commit/68f87c463e25a52cba08df18a1bcf2ed73c4a932))
+
+* build(deps-dev): bump black from 23.11.0 to 24.3.0
+
+Bumps [black](https://github.com/psf/black) from 23.11.0 to 24.3.0.
+- [Release notes](https://github.com/psf/black/releases)
+- [Changelog](https://github.com/psf/black/blob/main/CHANGES.md)
+- [Commits](https://github.com/psf/black/compare/23.11.0...24.3.0)
+
+---
+updated-dependencies:
+- dependency-name: black
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`791f1e8`](https://gitlab.com/ai-services/ai-service-template/-/commit/791f1e8b26d1ea700604335b7d5e2a44f7114a34))
+
+### Unknown
+
+* Merge pull request #6 from AmirLavasani/dependabot/pip/black-24.3.0
+
+build(deps-dev): bump black from 23.11.0 to 24.3.0 ([`1dca10e`](https://gitlab.com/ai-services/ai-service-template/-/commit/1dca10e3729b4cc80f724b71eef3f7cc0272ef0a))
 
 
 ## v0.8.5 (2024-04-13)
