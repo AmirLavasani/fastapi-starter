@@ -2,6 +2,13 @@
 
 
 
+## v0.8.8 (2024-05-07)
+
+### Style
+
+* style: add command to sort requirements ([`eba6fd9`](https://gitlab.com/ai-services/ai-service-template/-/commit/eba6fd9618c0734c4a08833f027c03f9aa83736d))
+
+
 ## v0.8.7 (2024-05-06)
 
 ### Build
