@@ -6,6 +6,11 @@ install-deps:
 install-deps-dev:
 	pip install -r requirements-dev.txt
 
+# Sort dependencies for both requirements.txt and requirements-dev.txt
+sort-deps:
+	sort requirements.txt -o requirements.txt
+	sort requirements-dev.txt -o requirements-dev.txt
+
 # Run the FastAPI app using uvicorn with auto-reload
 dev:
 	export PYTHONPATH=`pwd`/src && uvicorn app.main:app --reload
