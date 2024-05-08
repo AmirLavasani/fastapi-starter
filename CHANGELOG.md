@@ -2,6 +2,17 @@
 
 
 
+## v0.8.9 (2024-05-08)
+
+### Fix
+
+* fix: update error handling ([`a680a89`](https://gitlab.com/ai-services/ai-service-template/-/commit/a680a89292dc5a97c0dcc2de21a1f2ac0ad3d149))
+
+### Style
+
+* style: reformat using black ([`4518c9b`](https://gitlab.com/ai-services/ai-service-template/-/commit/4518c9b710a83884f00f4f5b2a9f1db18a625959))
+
+
 ## v0.8.8 (2024-05-07)
 
 ### Style
