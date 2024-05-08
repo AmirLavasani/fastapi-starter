@@ -1,36 +1,33 @@
-from typing import List
 from pydantic import BaseModel
-from fastapi import HTTPException
+from fastapi import HTTPException, status
 
 
-class NotFoundErrorResponse(BaseModel):
-    type: str = "service.not_found_error"
-    msg: str = "The requested resource not found"
-    loc: List[str] = ["general", "not_found_error"]
+class BaseErrorResponse(BaseModel):
+    status_code: int
+    type: str
+    msg: str
+    loc: list[str]
+
+    def as_exception(self) -> HTTPException:
+        return HTTPException(status_code=self.status_code, detail=self.model_dump())
 
 
-HTTPNotFoundErrorResponse = HTTPException(
-    status_code=404, detail=NotFoundErrorResponse().model_dump()
-)
-
-
-class BadRequestErrorResponse(BaseModel):
+class BadRequestErrorResponse(BaseErrorResponse):
+    status_code: int = status.HTTP_400_BAD_REQUEST
     type: str = "service.bad_request"
     msg: str = "The server cannot process the request"
-    loc: List[str] = ["general", "bad_request"]
+    loc: list[str] = ["general", "bad_request"]
 
 
-HTTPBadRequestErrorResponse = HTTPException(
-    status_code=400, detail=BadRequestErrorResponse().model_dump()
-)
+class NotFoundErrorResponse(BaseErrorResponse):
+    status_code: int = status.HTTP_404_NOT_FOUND
+    type: str = "service.not_found_error"
+    msg: str = "The requested resource not found"
+    loc: list[str] = ["general", "not_found_error"]
 
 
-class InternalServerErrorResponse(BaseModel):
+class InternalServerErrorResponse(BaseErrorResponse):
+    status_code: int = status.HTTP_500_INTERNAL_SERVER_ERROR
     type: str = "service.internal_server_error"
     msg: str = "The server encountered an unexpected condition"
-    loc: List[str] = ["general", "internal_server_error"]
-
-
-HTTPInternalServerErrorResponse = HTTPException(
-    status_code=500, detail=InternalServerErrorResponse().model_dump()
-)
+    loc: list[str] = ["general", "internal_server_error"]
